@@ -200,5 +200,4 @@ trait CompositeKey
             return $result;
         }, array());
     }
-
 }
