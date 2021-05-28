@@ -128,7 +128,7 @@ trait CompositeKey
      */
     protected function setKeysForSaveQuery($query)
     {
-        if (!is_array($this->getKeyName())) {
+       if (!is_array($this->getKeyName())) {
             $query->where($this->getKeyName(), '=', $this->getKeyForSaveQuery());
             return $query;
         }
@@ -142,6 +142,7 @@ trait CompositeKey
         }
         return $query;
     }
+    
 
     public static function find($ids, $columns = ['*'])
     {
